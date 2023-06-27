@@ -3,10 +3,10 @@ module.exports = router;
 
 
 
-router.use('/users', require('./users'))
-router.use('/movies', require('./movies'))
-router.use('/tvshows', require('./TVSHOWS'))
-router.use('/gpt', require('./gpt'))
+// router.use('/users', require('./users'))
+// router.use('/movies', require('./movies'))
+// router.use('/tvshows', require('./TVSHOWS'))
+// router.use('/gpt', require('./gpt'))
 
 
 

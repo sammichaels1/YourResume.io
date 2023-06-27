@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const {
   models: { User },
-} = require('../db');
+} = require('../db/db');
 module.exports = router;
 
 router.post('/login', async (req, res, next) => {
