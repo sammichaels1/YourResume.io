@@ -3,7 +3,11 @@
 @tailwind utilities;
 .body {
   font-family: sans-serif;
-  background-color: black;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 242, 255),
+    rgb(115, 77, 238)
+  );
   height: 820px;
 }
 a {
@@ -24,8 +28,8 @@ form div {
   display: inline-block;
 }
 .logo {
+  width: 85px;
   height: 50px;
-  width: 50px;
   padding-bottom: 0;
   margin-top: 0;
   padding-top: 5px;
@@ -36,8 +40,13 @@ form div {
 .container {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  /* background-image: white; */
   align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 242, 255),
+    rgb(115, 77, 238)
+  );
 }
 .dropbtn {
   background-color: black;
@@ -199,11 +208,7 @@ form div {
     "Lucida Sans", Arial, sans-serif;
   padding-bottom: 20px;
 }
-.genres {
-  color: white;
-  border: solid black 1px;
-  border-radius: 15px;
-}
+
 .home-link {
   color: white;
 }
@@ -454,7 +459,6 @@ h1 {
 }
 
 .trailer-embed {
-
   border-radius: 15px;
   margin-left: 40px;
   height: 400px;
@@ -464,7 +468,6 @@ h1 {
 .x {
   height: 30px;
   width: 30px;
-
 }
 
 .trailer {
@@ -495,7 +498,7 @@ h1 {
   padding-left: 2%;
 }
 
-.id-pic{
+.id-pic {
   height: 280px;
   width: 280px;
   border-radius: 100px;
@@ -508,13 +511,13 @@ h1 {
   margin-right: 10px;
 }
 
-.total-container{
+.total-container {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
 
-.name{
+.name {
   font-weight: bold;
   font-size: 13px;
   color: white;
@@ -522,78 +525,119 @@ h1 {
   padding-left: 5px;
 }
 
-.team-card1{
+.team-card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:rgb(71, 70, 70);
+  background-color: rgb(71, 70, 70);
   border-radius: 10px;
   height: 450px;
   border: solid 2px rgb(223, 104, 20);
 }
 
-.team-card2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 50px;
-  background-color:rgb(71, 70, 70);
-  border-radius: 10px;
-  height: 450px;
-  border: solid 2px rgb(223, 104, 20);
-}
-
-.team-card3{
+.team-card2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 50px;
-  background-color:rgb(71, 70, 70);
+  background-color: rgb(71, 70, 70);
   border-radius: 10px;
   height: 450px;
   border: solid 2px rgb(223, 104, 20);
 }
 
-.team-card4{
+.team-card3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 50px;
-  background-color:rgb(71, 70, 70);
+  background-color: rgb(71, 70, 70);
   border-radius: 10px;
   height: 450px;
   border: solid 2px rgb(223, 104, 20);
 }
 
-.job-title{
+.team-card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  background-color: rgb(71, 70, 70);
+  border-radius: 10px;
+  height: 450px;
+  border: solid 2px rgb(223, 104, 20);
+}
+
+.job-title {
   color: rgb(223, 104, 20);
 }
 
-.team{
+.team {
   color: rgb(223, 104, 20);
   margin-top: 20px;
   display: flex;
   justify-content: left;
   padding-left: 25px;
   text-decoration: underline;
-
 }
 
-.linkedin{
+.linkedin {
   height: 75px;
   width: 125px;
 }
 
-.name-box{
+.name-box {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.linkedin-link{
+.linkedin-link {
   margin-top: 10px;
 }
 
-.movie-title{
+.movie-title {
   color: white;
 }
+
+.your-resume {
+  color: white;
+  font-size: 4.2em;
+  text-align: left;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+.home-text {
+  color: white;
+  font-size: 1.5em;
+  padding-left: 20px;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-logo {
+  height: 700px;
+  width: 700px;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+
+.update-btn{
+  background-color: orange;
+  width: 120px;
+  padding: 10px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.fat-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
