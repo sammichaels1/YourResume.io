@@ -3,12 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import AuthForm from "../features/auth/AuthForm";
 import Home from "../features/home/Home";
-import AllMovies from "../features/Movies/AllMovies";
-import AllTVshows from "../features/TVSHOWS/AllTVshows";
-import SingleMovie from "../features/Movies/SingleMovie/SingleMovie";
-import SingleTVshow from "../features/TVSHOWS/SingleTVshows/SingleTVshow";
-import SearchResults from "../features/SearchResults/SearchResults";
-import Team from "../features/Team";
+import About from "../about/about";
 import { me } from "./store";
 
 const AppRoutes = () => {
@@ -24,11 +19,11 @@ const AppRoutes = () => {
         <Route exact path="/" element={<Home />} />
         {isLoggedIn ? (
           <>
-            <Route exact path="/home" element={<Home />} />
+            {/* <Route exact path="/home" element={<Home />} /> */}
             <Route exact path="/about" element={<About />} />
-            <Route exact path="import" element={<Import />} />
-            <Route exact path="/copytext" element={<CopyText />} />
-            <Route exact path="/Contact" element={<Contact />} />
+            {/* <Route exact path="import" element={<Import />} /> */}
+            {/* <Route exact path="/copytext" element={<CopyText />} /> */}
+            {/* <Route exact path="/Contact" element={<Contact />} /> */}
           </>
         ) : (
           <>
@@ -48,11 +43,11 @@ const AppRoutes = () => {
               element={<AuthForm name="signup" displayName="Sign Up" />}
             />
 
-            <Route exact path="/home" element={<Home />} />
+            {/* <Route exact path="/home" element={<Home />} /> */}
             <Route exact path="/about" element={<About />} />
-            <Route exact path="import" element={<Import />} />
-            <Route exact path="/copytext" element={<CopyText />} />
-            <Route exact path="/Contact" element={<Contact />} />
+            {/* <Route exact path="import" element={<Import />} /> */}
+            {/* <Route exact path="/copytext" element={<CopyText />} /> */}
+            {/* <Route exact path="/Contact" element={<Contact />} /> */}
           </>
         )}
       </Routes>
